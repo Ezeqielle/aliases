@@ -1,0 +1,19 @@
+alias ll='ls -rtl --color'
+alias cls='clear'
+alias rm='rm -iv --preserve-root'
+alias chmod='chmod -v --preserve-root'
+alias chown='chown -v --preserve-root'
+alias min5='find . -type f -mmin -5 -ls'
+
+alias disque='lsblk  -f -o NAME,FSSIZE,FSTYPE,LABEL,FSAVAIL,FSUSE%,MOUNTPOINT'
+alias df='df -hT devtmpfs -x tmpfs'
+alias umount='umount -flv'
+alias rgrep='find . -type f|xarg grep -win'
+
+alias notes='echo $(date +%A, \ %d\ %B\ \(%f\)\ )$* >> ~/.notes'
+alias cn='cat ~/.notes'
+alias en='vim +$ ~/.notes'
+
+alias py='python3'
+alias py2='python2.7'
+alias vola='vol.py'
