@@ -17,3 +17,5 @@ alias en='vim +$ ~/.notes'
 alias py='python3'
 alias py2='python2.7'
 alias vola='vol.py'
+
+alias LU="awk -F: '{ print $1}' /etc/passwd"
