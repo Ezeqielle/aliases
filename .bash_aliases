@@ -13,6 +13,10 @@ alias rgrep='find . -type f|xarg grep -win'
 alias fgrep='fgrep $LS_OPTIONS'
 alias egrep='egrep $LS_OPTIONS'
 
+# Compress file
+alias comp="tar zcvf"
+alias decomp="tar zxvf"
+
 # Some more alias to avoid making mistakes
 alias rm='rm -iv --preserve-root'
 alias chmod='chmod -v --preserve-root'
