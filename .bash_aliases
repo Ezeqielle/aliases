@@ -12,6 +12,7 @@ alias min5='find . -type f -mmin -5 -ls'
 alias rgrep='find . -type f|xarg grep -win'
 alias fgrep='fgrep $LS_OPTIONS'
 alias egrep='egrep $LS_OPTIONS'
+alias monip='ip=$(curl -s ifconfig.me/ip);echo "My public IP is: $ip"'
 
 # Compress file
 alias comp="tar zcvf"
@@ -59,3 +60,9 @@ alias vola='vol.py'
 
 # Admin
 alias LU="awk -F: '{ print $1}' /etc/passwd"
+
+# Autopsy
+alias autopsy="/usr/bin/autopsy &>/dev/null &"
+
+# Aliases  update
+alias modA='sudo vim /usr/share/aliases/.bash_aliases'
