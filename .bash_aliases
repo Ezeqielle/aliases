@@ -66,3 +66,7 @@ alias autopsy="/usr/bin/autopsy &>/dev/null &"
 
 # Aliases  update
 alias modA='sudo vim /usr/share/aliases/.bash_aliases'
+
+# Ansible
+alias ansi='cd /usr/share/ansible'
+alias invt='ansible-inventory -i rudder.py --list'
