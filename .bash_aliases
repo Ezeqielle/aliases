@@ -86,6 +86,18 @@ alias gta='git add'
 alias gtb='git branch'
 alias gtl='git for-each-ref --format="%(upstream:short)" "$(git symbolic-ref -q HEAD)"'
 
+# Repo sync health check
+alias reposync='
+echo "=== Repo sync timer ===";
+systemctl status repo-sync.timer --no-pager;
+echo;
+echo "=== Repo sync service (last run) ===";
+systemctl status repo-sync.service --no-pager;
+echo;
+echo "=== Next timer ===";
+systemctl list-timers repo-sync.timer
+'
+
 # Restic alias
 # list all snapshots
 alias lrest="restic --password-file /opt/backup/.secret -r sftp:backupuser@:/srv/backup snapshots"
