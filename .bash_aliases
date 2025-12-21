@@ -85,6 +85,8 @@ alias gtpl='git pull'
 alias gta='git add'
 alias gtb='git branch'
 alias gtl='git for-each-ref --format="%(upstream:short)" "$(git symbolic-ref -q HEAD)"'
+alias gl="git log --all --graph --pretty=format:'%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%s%n'"
+
 
 # Repo sync health check
 alias reposync='
