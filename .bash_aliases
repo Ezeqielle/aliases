@@ -79,9 +79,12 @@ alias tfi='terraform init'
 alias tfv='terraform validate'
 
 alias gts='git status'
-alias gtc='git commit -m'
+alias gtc='git commit'
 alias gtps='git push'
 alias gtpl='git pull'
+alias gta='git add'
+alias gtb='git branch'
+alias gtl='git for-each-ref --format="%(upstream:short)" "$(git symbolic-ref -q HEAD)"'
 
 # Restic alias
 # list all snapshots
